@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Trade+Winds&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 28, 68);
+    color: white;
+    font-family: 'STIX Two Text', cursive;
+}
+
+#hero-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero {
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-title {
+    font-size: 4em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px blue;
+    color: rgb(198, 198, 198);
+    text-align: center;
+}
+
+#hero-title span {
+    color: white;
+    text-shadow: 0 0 20px rgb(48, 140, 237);
+}
+
+#hero-desc {
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+    width: 90vw;
+    font-family: 'Trade Winds';
+    letter-spacing: 2px;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 3em;
+}
+
+#login, #register {
+    padding: 20px;
+    color: rgb(0, 157, 255);
+    border-radius: 40px;
+    font-weight: bold;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Trade Winds';
+}
+
+#login:hover, #register:hover {
+    background-color: rgb(68, 67, 67);
+    color: gold;
+}
