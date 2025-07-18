@@ -19,7 +19,7 @@ export default function RegisterPage() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form);
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/register`, form);
       const { token, user } = res.data;
       login(user, token); // save in context
       navigate('/'); // redirect to notes page

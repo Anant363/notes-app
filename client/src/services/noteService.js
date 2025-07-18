@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api/notes';
+const API_BASE = `${import.meta.env.VITE_BACKEND_URL}/api/notes`;
 
 export const getAllNotes = async (token) => {
   const res = await axios.get(API_BASE, {
